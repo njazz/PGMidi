@@ -20,7 +20,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [window addSubview:viewController.view];
+    //[window addSubview:viewController.view];
+    [self.window setRootViewController:viewController];
     [window makeKeyAndVisible];
 
     IF_IOS_HAS_COREMIDI

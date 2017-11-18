@@ -8,12 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+#import "MidiMonitorAppDelegate.h"
+
 int main(int argc, char *argv[])
 {
 #if __has_feature(objc_arc)
     @autoreleasepool
     {
-        int retVal = UIApplicationMain(argc, argv, nil, nil);
+        int retVal = UIApplicationMain(argc, argv, nil, NSStringFromClass([MidiMonitorAppDelegate class]));
         return retVal;
     }
 #else
