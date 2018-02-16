@@ -28,6 +28,12 @@
 		319686C91FC0671C00851148 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		319686CA1FC067DB00851148 /* PGMidi.h in Headers */ = {isa = PBXBuildFile; fileRef = C1763E701266F7F60032E953 /* PGMidi.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		319686CB1FC067F300851148 /* PGArc.h in Headers */ = {isa = PBXBuildFile; fileRef = C139406414DF32E20054551E /* PGArc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		319AA5842035AC8C00CFF1F1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 319686AF1FC0640300851148 /* XCTest.framework */; };
+		319AA58C2035AE7E00CFF1F1 /* PGMidiFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 319686BB1FC066BF00851148 /* PGMidiFramework.framework */; };
+		319AA5902035AF7700CFF1F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		319AA5922035AF7C00CFF1F1 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 319AA5912035AF7C00CFF1F1 /* CoreFoundation.framework */; };
+		319AA5932035AF8100CFF1F1 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1763E411266F0190032E953 /* CoreMIDI.framework */; };
+		319AA5952035AFC200CFF1F1 /* PGMidiFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 319686BB1FC066BF00851148 /* PGMidiFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C1314AC212FC259B0073005E /* PGMidiAllSources.mm in Sources */ = {isa = PBXBuildFile; fileRef = C1314ABF12FC259B0073005E /* PGMidiAllSources.mm */; };
 		C1314AC312FC259B0073005E /* PGMidiFind.mm in Sources */ = {isa = PBXBuildFile; fileRef = C1314AC112FC259B0073005E /* PGMidiFind.mm */; };
 		C139406214DF28FA0054551E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C139406114DF28FA0054551E /* README.md */; };
@@ -40,6 +46,19 @@
 		C1763FE312672EEC0032E953 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C1763FE212672EEC0032E953 /* Default.png */; };
 		C1FFC85B12798CAF003DD5CD /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1FFC85A12798CAF003DD5CD /* Entitlements.plist */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		319AA5942035AFB600CFF1F1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				319AA5952035AFC200CFF1F1 /* PGMidiFramework.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,6 +79,7 @@
 		319686BB1FC066BF00851148 /* PGMidiFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PGMidiFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		319686BD1FC066BF00851148 /* PGMidiFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGMidiFramework.h; sourceTree = "<group>"; };
 		319686BE1FC066BF00851148 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		319AA5912035AF7C00CFF1F1 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		32CA4F630368D1EE00C91783 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* MidiMonitor-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MidiMonitor-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		C1314ABE12FC259B0073005E /* PGMidiAllSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidiAllSources.h; sourceTree = "<group>"; };
@@ -97,6 +117,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				319AA5932035AF8100CFF1F1 /* CoreMIDI.framework in Frameworks */,
+				319AA5922035AF7C00CFF1F1 /* CoreFoundation.framework in Frameworks */,
+				319AA5902035AF7700CFF1F1 /* UIKit.framework in Frameworks */,
+				319AA58C2035AE7E00CFF1F1 /* PGMidiFramework.framework in Frameworks */,
+				319AA5842035AC8C00CFF1F1 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +188,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				319AA5912035AF7C00CFF1F1 /* CoreFoundation.framework */,
 				319686AF1FC0640300851148 /* XCTest.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
@@ -277,6 +303,7 @@
 				319686A31FC0631600851148 /* Sources */,
 				319686A41FC0631600851148 /* Frameworks */,
 				319686A51FC0631600851148 /* Resources */,
+				319AA5942035AFB600CFF1F1 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -494,7 +521,7 @@
 				GCC_WARN_PEDANTIC = NO;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = PGMidiTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexnadzharov.PGMidiTests;
@@ -533,7 +560,7 @@
 				GCC_WARN_PEDANTIC = NO;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = PGMidiTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexnadzharov.PGMidiTests;
